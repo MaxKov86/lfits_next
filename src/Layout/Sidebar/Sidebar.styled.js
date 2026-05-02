@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export const SidebarStyle = styled.div`
   position: fixed;
@@ -54,7 +55,7 @@ export const SidebarNavItem = styled.li`
     }
   }
 `;
-export const SidebarNavLink = styled.a`
+export const SidebarNavLink = styled(Link)`
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;

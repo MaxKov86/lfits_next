@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import Link from "next/link";
 
-export const LogoStyle = styled.a`
+export const LogoStyle = styled(Link)`
   width: 55px;
   height: 16.5px;
   cursor: pointer;

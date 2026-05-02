@@ -3,11 +3,6 @@
   src: url('/public/font/Roboto-Regular.ttf') format('ttf');
 }
 
-html {
-
-  scroll-behavior: smooth;
-}
-
 
 *,
 *::before,

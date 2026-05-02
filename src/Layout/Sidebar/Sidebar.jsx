@@ -41,7 +41,9 @@ const Sidebar = ({ onCloseBtn, isOpen }) => {
       <SidebarNav>
         {Object.values(MOBILE_MENU_ITEMS).map((item) => (
           <SidebarNavItem onClick={onCloseBtn} key={item.linkName}>
-            <SidebarNavLink to={item.anchorTo}>{item.linkName}</SidebarNavLink>
+            <SidebarNavLink href={item.anchorTo}>
+              {item.linkName}
+            </SidebarNavLink>
           </SidebarNavItem>
         ))}
       </SidebarNav>
