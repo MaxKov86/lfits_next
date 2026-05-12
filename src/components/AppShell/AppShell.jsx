@@ -53,7 +53,11 @@ const AppShell = ({ children }) => {
 
   return (
     <>
-      <Layout onOpenBtn={openSide}>{children}</Layout>
+      <Layout onOpenBtn={openSide}>
+        {typeof children === "function"
+          ? children({ openModal, closeModal })
+          : children}
+      </Layout>
 
       <Sidebar onCloseBtn={closeSide} isOpen={isSideOpen} />
       <Overlay isOpen={isSideOpen} />
